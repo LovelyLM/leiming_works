@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.mytable{
+	
+	border-collapse: collapse;
+	width: 1190px;
+	height: 632px;
+}
+.mytable td{
+		
+	height: 40px;
+	width: 40px;
+	text;
+}
+body{
+	
+	background:url(../img2/bg3.jpg)
+}
+.top{
+	width: 100%;
+	height: 80px;
+	margin-top: 55px;
+	
+}
+.text{
+	padding-left: 96px;
+	float: left;
+	font-family: "微软雅黑";
+	color: white;
+	font-size: 60px;
+}
+.icon{
+	padding-right: 550px;
+	float: right;
+}
+.concent{
+	float: left;
+	margin-top: 61px;
+	margin-left: 96px;
+}
+.select{
+	float: left;
+	padding-top: 30px;
+	padding-left: 30px;
+}
