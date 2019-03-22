@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>时钟效果</title>
+		<style type="text/css">
+			body{
+				padding: 0;
+				margin: 0;
+			}
+			.date1{
+				background-image: url(img/clock.png); 
+				font-size: 45px;
+				text-align: center;
+				line-height: 146px;
+				color: white;
+				font-family: '微软雅黑';
+				width: 240px;
+				height: 146px;
+			}
+			.date{
+				background-image: url(img/cald.png); repeat fixed center;
+				width: 150px;
+				height: 138px;
+			}
+			.week{
+				text-align: center;
+				width: 150px;
+				height: 35px;
+				line-height: 35px;
+				color: white;
+				font-weight: bold;
+				font-family: '微软雅黑';
+				font-size: 22px;
+			}
+			.riqi{
+				height: 80px;
+				width: 140px;
+				text-align: center;
+				line-height: 80px;
+				font-size: 70px;
+				font-weight: bold;
+				font-family: '微软雅黑';
+			}
+		
+		</style>
+		
+		
+		<script type="text/javascript">
+			function displayTime(){
+				var h = new Date().getHours();
+				var m = new Date().getMinutes();
+				var s = new Date().getSeconds();
+				var week = new Date().getDay();
+				var date = new Date().getDate();
+				if(week==1) week='星期一';
+				if(week==2) week='星期二';
+				if(week==3) week='星期三';
+				if(week==4) week='星期四';
+				if(week==5) week='星期五';
+				if(week==6) week='星期六';
+				if(week==0) week='星期天';
+				if(m<10) m='0'+m;
+				if(s<10) s='0'+s;
+				document.getElementById('date1').innerHTML = h+':'+ m +':'+ s;
+				document.getElementById('week').innerHTML = week;
+				document.getElementById('riqi').innerHTML = date;
+				 
+			}
+			setInterval(displayTime,1000);
+		</script>
+		
+		
+	</head>
+	<body>
+		
+	<div class="lm">
+		<div class="date">
+			<div class="week" id="week">星期</div>
+			<div class="riqi" id="riqi"></div>	
+		</div>
+		<div class="date1" id="date1"></div>
+	</div>
+		
+	</body>
+</html>
