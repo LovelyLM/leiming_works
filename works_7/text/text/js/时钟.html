@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			body{
+				padding: 0;
+				margin: 0;
+			}
+			.date1{
+				background-image: url(../img/clock.png); 
+				font-size: 45px;
+				text-align: center;
+				line-height: 146px;
+				color: white;
+				font-family: '微软雅黑';
+				width: 240px;
+				height: 146px;
+			}
+			.date{
+				background-image: url(../img/cald.png); repeat fixed center;
+				width: 150px;
+				height: 138px;
+			}
+			.week{
+				text-align: center;
+				width: 150px;
+				height: 35px;
+				line-height: 35px;
+				color: white;
+				font-weight: bold;
+				font-family: '微软雅黑';
+				font-size: 22px;
+			}
+			.riqi{
+				height: 80px;
+				width: 140px;
+				text-align: center;
+				line-height: 80px;
+				font-size: 70px;
+				font-weight: bold;
+				font-family: '微软雅黑';
+			}
+			
+		
+		</style>
+		
+	</head>
+	<body>
+	
+		<div class="date">
+			<div class="week">星期一</div>
+			<div class="riqi">22</div>
+			
+		</div>
+		
+		<div class="date1" id="date1"></div>
+		<meta charset="utf-8">
+		<title>时钟效果</title>
+		<script>
+			function showtime(){
+				//获取当前的日期对象
+				var today = new Date();
+				//获取时分秒
+				var h = today.getHours();
+				var m = today.getMinutes();
+				var s = today.getSeconds();
+				if(s<10){
+					var a = '0';
+					s = a+s;
+				}
+				if(h<10){
+					var a = '0';
+					h = a+h;
+				}
+				if(m<10){
+					var a = '0';
+					m = a+m;
+				}
+				document.getElementByID('date1').innerHTML = 'dsadsd';
+				
+				setInterval("showtime()",1000)
+				
+			}
+			showtime();
+		</script>
+	</body>
+</html>

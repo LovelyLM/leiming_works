@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>事件</title>
+		<style type="text/css">
+			input{font-size:26px;margin-top: 20px;}
+			body{background-image: url(images/grassland.png);}
+			#mytank{position: absolute;left:10px;top:100px}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="按钮一" id="bon1"/>
+		<input type="button" value="按钮二" id="bon2"/>
+		<input type="button" value="按钮三" id="bon3"/>
+		<hr />
+		<img id="mytank" src="images/right.png"/>
+		<script type="text/javascript">
+			document.getElementById('bon1').addEventListener('click',function(){
+																		alert("你点击了这里!")
+			});
+			document.getElementById('bon2').addEventListener('click',function(){
+																		this.value = '按钮2测试'
+			})
+			document.getElementById('bon3').addEventListener('click',function(){
+																		alert('你点击了我！')
+																		
+			})
+			document.getElementById('bon3').addEventListener('mouseover',function(){
+																		this.style.background = 'red'
+																		
+			})
+				document.getElementById('bon3').addEventListener('mouseout',function(){
+																		this.style.background = 'white'
+																		
+			})
+			var mytank = document.getElementById('mytank');
+			window.addEventListener(
+				'keydown',
+				function(e){
+					console.log(e.keyCode);
+					if(e.keyCode == 39){
+						
+						mytank.style.left = (mytank.offsetLeft+10)+'px'; 
+						mytank.src='images/right.png'
+					}
+					if(e.keyCode == 37){
+						mytank.style.left = (mytank.offsetLeft-10)+'px';
+						mytank.src='images/left.png'
+					}
+					if(e.keyCode == 40){
+						mytank.src='images/down.png'
+						mytank.style.top = (mytank.offsetTop+10)+'px'; 
+						
+					}
+					if(e.keyCode == 38){
+						mytank.style.top = (mytank.offsetTop-10)+'px';
+						mytank.src='images/up.png'
+					}
+			
+				});
+			
+			
+		</script>
+	</body>
+</html>
