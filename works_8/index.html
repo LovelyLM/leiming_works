@@ -20,41 +20,44 @@
 				margin: 18px;
 				padding-left: 30px;
 			}
-			
 		</style>
 	</head>
 	<body>
-		<div id="ta" style="margin-top: 200px;margin-left: 400px   ;position: absolute">
-			<a href="javascript:;" onclick="hide('concent')"><img src="img/fold.gif">树形菜单：</a>
-			<div id="concent">
-			<ul><a href="javascript:;" onclick="hide('1')"><img src="img/fclose.gif">文学艺术</a></ul>
+		<div id="ta" style="position: relative;float: left;left: 50%;">
+			<div id="concent" style="position: relative;float: left;left: -50%;height: 224px;width: 423px;padding-top: 50%;">
+				
+				<a href="javascript:;" onclick="hide('a')"><img src="img/fold.gif">树形菜单：</a>
+				<div id="a">
+				<ul><a href="javascript:;" onclick="hide('1')"><img src="img/fclose.gif">文学艺术</a></ul>
 
-			<ul id="1">
-				<li><img src="img/doc.gif">小说先锋</li>
-				<li><img src="img/doc.gif">小说散文</li>
-				<li><img src="img/doc.gif">诗风词韵</li>
-			</ul>
+				<ul id="1">
+					<li><img src="img/doc.gif">小说先锋</li>
+					<li><img src="img/doc.gif">小说散文</li>
+					<li><img src="img/doc.gif">诗风词韵</li>
+				</ul>
 
-			<ul><a href="javascript:;" onclick="hide('2')"><img src="img/fclose.gif">贴图专区</a></ul>
+				<ul><a href="javascript:;" onclick="hide('2')"><img src="img/fclose.gif">贴图专区</a></ul>
 
-			<ul id="2">
-				<li><img src="img/doc.gif">真我风采</li>
-				<li><img src="img/doc.gif">视频贴图</li>
-				<li><img src="img/doc.gif">行行摄摄</li>
-				<li><img src="img/doc.gif">Flash贴图</li>
-			</ul>
+				<ul id="2">
+					<li><img src="img/doc.gif">真我风采</li>
+					<li><img src="img/doc.gif">视频贴图</li>
+					<li><img src="img/doc.gif">行行摄摄</li>
+					<li><img src="img/doc.gif">Flash贴图</li>
+				</ul>
 
-			<ul><a href="javascript:;" onclick="hide()"><img src="img/fclose.gif">房产论坛</a></ul>
-			<ul><a href="javascript:;" onclick="hide()"><img src="img/fclose.gif">娱乐八卦</a></ul>
+				<ul><a href="javascript:;" onclick="hide()"><img src="img/fclose.gif">房产论坛</a></ul>
+				<ul><a href="javascript:;" onclick="hide()"><img src="img/fclose.gif">娱乐八卦</a></ul>
+				</div>
+			</div>
+
+
+
+			<div id="tab" style="position: relative;float: left;left: -50%;padding-top: 50%;">
+				<img src="img/left1.jpg" id="book" onmouseover="qiehuan()"><img src="img/right1.jpg" id="shouji" onmouseover="qiehuan2()">
+				<li style="list-style: none;"><img src="img/end1.jpg" id="ad1"></li>
 			</div>
 		</div>
-		
-		
-		<div id="tab" style="margin-left: 800px;margin-top: 200px;   position: absolute">
-			<img src="img/left1.jpg" id="book" onmouseover="qiehuan()"><img src="img/right1.jpg" id="shouji" onmouseover="qiehuan2()">
-			<li style="list-style: none;"><img src="img/end1.jpg" id="ad1"></li>
-		</div>
-		
+
 
 		<script type="text/javascript">
 			function hide(d) {
@@ -64,22 +67,24 @@
 					document.getElementById(d).style.display = '';
 				}
 			}
-			
-			function qiehuan(){
-				document.getElementById('tab').addEventListener('mouseover',function(){
+		
+		
+
+			function qiehuan() {
+				document.getElementById('tab').addEventListener('mouseover', function() {
 					document.getElementById('book').src = "img/left1.jpg"
 					document.getElementById('shouji').src = "img/right1.jpg"
 					document.getElementById('ad1').src = "img/end1.jpg"
 				})
 			}
-				function qiehuan2(){
-				document.getElementById('tab').addEventListener('mouseover',function(){
+
+			function qiehuan2() {
+				document.getElementById('tab').addEventListener('mouseover', function() {
 					document.getElementById('shouji').src = "img/right2.jpg"
 					document.getElementById('book').src = "img/left2.jpg"
 					document.getElementById('ad1').src = "img/end2.jpg"
 				})
 			}
-			
 		</script>
 	</body>
 </html>
