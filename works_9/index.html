@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+	</head>
+	<body style="height:2000px;">
+
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+
+			.ad1 {
+				position: fixed;
+				left: 0px;
+				top: 150px
+			}
+
+			.ad2 {
+				position: fixed;
+				right: 0px;
+				top: 150px
+			}
+
+			.ad3 {
+				position: fixed;
+				right: 0;
+				bottom: -250;
+				
+			}
+		</style>
+
+		<div id="ad1" class="ad1">
+			<div><a href="javascript:void(0);" onClick="lm()"><img height="10px" src="images/close.png"></a></div>
+			<img src="images/ad1.jpg" />
+		</div>
+
+		<div id="ad2" class="ad2">
+			<div><a href="javascript:void(0);" onClick="lm()"><img height="10px" src="images/close.png"></a></div>
+			<img src="images/ad1.jpg" />
+		</div>
+		<div class="ad3" id="ad3"><img src="images/ad2.jpg"></div>
+
+
+		<script type="text/javascript">
+			function lm() {
+				document.getElementById('ad1').style.display = 'none';
+				document.getElementById('ad2').style.display = 'none';
+			}
+			$(document).ready(function() {
+
+					$(".ad3").animate({bottom: 0},"slow");
+
+			});
+		</script>
+
+	</body>
+</html>
