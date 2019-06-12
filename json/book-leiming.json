@@ -1,0 +1,125 @@
+{
+  
+  "book": [
+    {
+      "id": "1",
+      "name": "《红日》",
+      "oldprice": "13000",
+      "price": "17.8",
+      "instock": "3678",
+      "img":"img/《红日》.jpg",
+      "img1":"img/《红日》big.jpg"
+    },
+    {
+      "id": "2",
+      "name": "《呼啸山庄》",
+      "oldprice": "14000",
+      "price": "28.6",
+      "instock": "3678",
+      "img":"img/《呼啸山庄》.jpg",
+      "img1":"img/《呼啸山庄》big.jpg"
+    },
+    {
+      "id": "3",
+      "name": "《美的历程》",
+      "oldprice": "12000",
+      "price": "34.3",
+      "instock": "3678",
+      "img":"img/《美的历程》.jpg",
+      "img1":"img/《美的历程》big.jpg"
+      
+    },
+    {
+      "id": "4",
+      "name": "《追风筝的人》",
+      "oldprice": "12000",
+      "price": "31.6",
+      "instock": "3678",
+      "img":"img/《追风筝的人》.jpg",
+      "img1":"img/《追风筝的人》big.jpg"
+      
+    },
+    {
+      "id": "5",
+      "name": "《悲惨世界》",
+      "oldprice": "12000",
+      "price": "56.7",
+      "instock": "3678",
+      "img":"img/《悲惨世界》.jpg",
+      "img1":"img/《悲惨世界》big.jpg"
+      
+    },
+    {
+
+      "id": "6",
+      "name": "《名利场》",
+      "oldprice": "12000",
+      "price": "46.0",
+      "instock": "3678",
+      "img":"img/《名利场》.jpg",
+      "img1":"img/《名利场》big.jpg"
+      
+    },
+    {
+      "id": "7",
+      "name": "《伪君子》",
+      "oldprice": "12000",
+      "price": "33.2",
+      "instock": "3678",
+      "img":"img/《伪君子》.jpg",
+      "img1":"img/《伪君子》big.jpg"
+    },
+    {
+      "id": "8",
+      "name": "《舌尖上的中国》",
+      "oldprice": "12000",
+      "price": "63.6",
+      "instock": "3678",
+      "img":"img/《舌尖上的中国》.jpg",
+      "img1":"img/《舌尖上的中国》big.jpg"
+      
+    },
+    {
+      "id": "9",
+      "name": "《生气汤》",
+      "oldprice": "12000",
+      "price": "98.4",
+      "instock": "3678",
+      "img":"img/《生气汤》.jpg",
+      "img1":"img/《生气汤》big.jpg"
+      
+    },
+    {
+      "id": "10",
+      "name": "《世界最伟大的推销员》",
+      "oldprice": "12000",
+      "price": "43.7",
+      "instock": "3678",
+      "img":"img/《世界上最伟大的推销员》.jpg",
+      "img1":"img/《世界上最伟大的推销员》big.jpg"
+      
+    },
+    {
+      "id": "11",
+      "name": "《玩偶之家》",
+      "oldprice": "12000",
+      "price": "13.6",
+      "instock": "3678",
+      "img":"img/《玩偶之家》.jpg",
+      "img1":"img/《玩偶之家》big.jpg"
+      
+    },
+    {
+
+      "id": "12",
+      "name": "《鲁宾逊漂流记》",
+      "oldprice": "12000",
+      "price": "23.6",
+      "instock": "3678",
+      "img":"img/《鲁滨逊漂流记》.jpg",
+      "img1":"img/《鲁滨逊漂流记》big.jpg"
+      
+    }
+    
+  ]
+}
