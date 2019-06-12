@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://169001226.net3v.net/zuoye14.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<title></title>
+	<script src="jquery-3.1.1.min.js"></script><script>
+		$(function(){
+			var endx = 0;
+			var endy = 0;
+			var downx1  = 0;
+			var downy1 = 0;
+			
+			$(document).click(function(e){
+				downx1 = e.pageX;
+				downy1 = e.pageY;
+				
+				if(endx>=downx1){
+					$('#imgs').attr('src','player_left.gif');	
+				}else{
+					$('#imgs').attr('src','player_right.gif');
+				}
+				$('#imgs').stop();
+	            $('#imgs').animate({
+	            	left:downx1,
+	            	top:downy1
+				},2000,
+				function(){
+					
+					if((downx1>450&&downx1<620)){
+						if(downy1>250&&downy1<420){
+							$('#imgs').attr('src','player1_big.gif');
+							$('#yao').remove();
+						}
+					}
+				});
+				
+				endx = downx1;
+				endy = downy1;
+			});
+			$('#imgs').dblclick(function(){
+				$('#imgs').attr('src','playerbig_right.gif');
+			});
+		});
+		
+	</script><style type="text/css">
+		#bg{
+			width: 100%;
+			height: 1080px;
+			background-color: #000000;
+		}
+		#imgs{
+			position:absolute;
+		}
+		#yao{
+			padding-left: 500px;
+			padding-top: 300px;
+		}
+		
+	</style></head>
+	
+	
+	
+	
+	<body>
+		<div id="bg">
+			<img src="player_right.gif" id="imgs">
+			<img src="pet.gif" id="yao">
+		</div>
+	
+
+<center>
+<br><br> ���ռ��� <a href="http://free.3v.do/" target="_blank">��ѿռ�</a> �����ṩ<br><br>
+</center>
+</body></html>
