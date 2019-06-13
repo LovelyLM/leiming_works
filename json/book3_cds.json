@@ -1,0 +1,85 @@
+﻿[
+   
+        {
+            "name": "不会说话就输了",
+            "img": "s1.png",
+            "bigimg": "bs1.png",
+            "rmb": "99.84",
+            "yrmb":"150.00",
+            "shul":"500"
+        },
+        {
+            "name": "三体",
+            "img": "s2.png",
+            "bigimg": "bs2.png",
+            "rmb": "64.00",
+            "yrmb":"150.00",
+             "shul":"500"
+
+        },
+        {
+            "name": "我不乱发脾气",
+            "img": "s3.png",
+            "bigimg": "bs3.png",
+            "rmb": "98.64",
+            "yrmb":"150.00",
+             "shul":"500"
+        },
+        {
+            "name": "高情商聊天术",
+            "img": "s4.png",
+            "bigimg": "bs4.png",
+            "rmb": "88.74",
+            "yrmb":"150.00",
+             "shul":"500"
+        },
+        {
+            "name": "平凡的世界",
+            "img": "s5.png",
+            "bigimg": "bs5.png",
+            "rmb": "69.14",
+            "yrmb":"150.00",
+             "shul":"500"
+        },
+        {
+            "name":  "人间失格",
+            "img": "s6.png",
+            "bigimg": "bs6.png",
+            "rmb": "99.84",
+            "yrmb":"150.00",
+             "shul":"500"
+        },
+        {
+            "name": "灰度决策",
+            "img": "s7.png",
+            "bigimg": "bs7.png",
+            "rmb": "99.84",
+            "yrmb":"150.00",
+             "shul":"500"
+        },
+        {
+            "name":"天才在左，疯子在右",
+            "img": "s8.png",
+            "bigimg": "bs8.png",
+            "rmb": "55.84",
+            "yrmb":"150.00",
+             "shul":"500"
+        },
+        {
+            "name": "孤独是生命的礼物",
+            "img": "s9.png",
+            "bigimg": "bs9.png",
+            "rmb": "79.84",
+            "yrmb":"150.00",
+             "shul":"500"
+        },
+        {
+            "name": "追风筝的人",
+            "img": "s10.png",
+            "bigimg": "bs10.png",
+            "rmb": "96.84",
+            "yrmb":"150.00",
+             "shul":"500"
+        }
+    
+]
